@@ -1,4 +1,9 @@
+
+var amount = window.prompt("How much money would you like? (we only accept integer values): ");
+
 function ATM(input){
+
+    input = Math.trunc(input);
 
     let N1 = Math.trunc(input/100);
     let R1 = (input/100) - N1;
@@ -12,10 +17,12 @@ function ATM(input){
     let N4 = Math.trunc(R3/0.5);
     let R4 = (R3/0.5) - N4;
 
-    let rest = Math.round(R4 * 10);
+    // return console.log(R4);
+
+    let rest = (R4 * 10);
 
     return console.log("You recieve "+N1+" * 100€, "+N2+" * 50€, "+N3+" * 20€ and "+N4+" * 10€ notes, unfortunately we can not give out "+ rest +" euros.");
 
 }
 
-ATM(287);
+ATM(amount);
