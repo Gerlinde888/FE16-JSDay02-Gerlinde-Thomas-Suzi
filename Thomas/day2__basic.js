@@ -1,12 +1,12 @@
 var year=new Date().getFullYear();
 
-// var noC = window.prompt("Number of children: ");
+var noC = window.prompt("Number of children: ");
 
-// var pn =window.prompt("Your partner's name: ");
+var pn =window.prompt("Your partner's name: ");
 
-// var gl =window.prompt("Your geographic location: ");
+var gl =window.prompt("Your geographic location: ");
 
-// var jt =window.prompt("Your job title: ");
+var jt =window.prompt("Your job title: ");
 
 function crystalGazer(children, partner, location, job){
     return prediction="You will be a "+job+" in "+location+" and married to "+partner+" with "+children+"."
@@ -15,7 +15,7 @@ function crystalGazer(children, partner, location, job){
 //const crystalGazer(children, partner, location, job) => return prediction="You will be a "+job+" in "+location+" and married to "+partner+" with "+children+".";
 
 
-// alert(crystalGazer(noC, pn, gl, jt)); 
+alert(crystalGazer(noC, pn, gl, jt)); 
 
 function ageCalculator(birth_year, current_year){
     let early=current_year - birth_year;
