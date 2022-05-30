@@ -1,8 +1,9 @@
-const degreesToRadiansConverter = (degrees) => 
+const areaVolCalulator = (width,height,depth) => 
 {
-    let pi = Math.PI;
-    let radians = degrees *  pi / 180;
-    
-return `${degrees} Degrees are ${radians} Radians`;}
+    let area = width * height;
+    let volume = width * height * depth;
 
-console.log(degreesToRadiansConverter(90));
+    
+return `The area of the box is: ${area} \nThe volume of the box is: ${volume} `;}
+
+console.log(areaVolCalulator (2,4,6));
