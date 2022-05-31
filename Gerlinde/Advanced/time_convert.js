@@ -8,4 +8,4 @@ const calcTime = (sec) =>
 return `Weeks:  ${w} Days: ${d} Hours: ${h} Minutes: ${m} Seconds:  ${s}`  ;
 }
 
-console.log(calcTime(888888));
+console.log(calcTime(1203040));
